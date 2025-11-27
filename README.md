@@ -5,7 +5,6 @@ This project is a small hotel-booking chatbot built using Amazon Lex V2 and AWS 
 It collects details like room type, check-in date, number of nights, and number of guests, and then confirms the booking using a Lambda function.
 This project helped me understand how Lex slot elicitation works, how Lambda fulfillment is integrated, and how to debug issues using CloudWatch.
 
-=================================================================================================
 
 🚀 What the Chatbot Does
 ---------------------------
@@ -28,7 +27,7 @@ The final response looks like:
 
 Room booking confirmed! room type for no.of guests starting from checkin for no.of nights.
 
-=================================================================================================
+
 
 🧩 AWS Services Used
 ----------------------------
@@ -64,7 +63,7 @@ Lex → Lambda invoke permission
 
 Lambda → CloudWatch logging permission
 
-=======================================================================================================
+
 
 📁 Project Structure
 --------------------------
@@ -81,7 +80,7 @@ aws-lex-hotel-booking-chatbot/
 ├── .gitignore
 └── README.md
 
-================================================
+
 
 🧪 How to Test the Bot (Quick Guide)
 --------------------------------------
@@ -96,7 +95,7 @@ Lex will call the Lambda alias (prod)
 
 Final confirmation message will be shown
 
-========================================================================
+
 
 🔧 Lambda Code (Fulfillment)
 -------------------------------
@@ -154,4 +153,4 @@ def lambda_handler(event, context):
                 }
             ],
         }
-=======================================END===========================================
+
