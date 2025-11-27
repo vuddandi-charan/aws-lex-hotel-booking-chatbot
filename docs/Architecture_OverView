@@ -1,0 +1,18 @@
+# Architecture Overview
+
+This chatbot uses Amazon Lex V2 + AWS Lambda + CloudWatch.
+
+Flow:
+User → Amazon Lex V2 → Lambda (alias: prod) → CloudWatch Logs → Response back to Lex.
+
+Components:
+- Amazon Lex V2 for slot elicitation
+- AWS Lambda for fulfillment
+- IAM Role for Lex → Lambda permission
+- CloudWatch for debugging
+
+Slots:
+- RoomType
+- CheckInDate
+- Nights
+- GuestsCount
